@@ -78,13 +78,13 @@ if __name__ == "__main__":
     print(brd)
     brd.make_move("X", 8)
     brd.make_move("O", 7)
-
+    print(brd)
     assert brd.game_over() == False
 
     brd.make_move("X", 5)
     brd.make_move("O", 6)
     brd.make_move("X", 2)
-
+    print(brd)
     assert brd.has_won("X") == True
     assert brd.has_won("O") == False
     assert brd.game_over() == True
